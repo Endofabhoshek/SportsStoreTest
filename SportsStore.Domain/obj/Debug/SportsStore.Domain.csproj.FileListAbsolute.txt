@@ -1,0 +1,16 @@
+c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.Domain\bin\Debug\SportsStore.Domain.dll
+c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.Domain\bin\Debug\SportsStore.Domain.pdb
+c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.Domain\bin\Debug\Castle.Core.dll
+c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.Domain\bin\Debug\Moq.dll
+c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.Domain\bin\Debug\Ninject.dll
+c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.Domain\bin\Debug\System.Threading.Tasks.Extensions.dll
+c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.Domain\bin\Debug\System.ValueTuple.dll
+c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.Domain\bin\Debug\Castle.Core.xml
+c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.Domain\bin\Debug\Moq.pdb
+c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.Domain\bin\Debug\Moq.xml
+c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.Domain\bin\Debug\Ninject.xml
+c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.Domain\bin\Debug\System.Threading.Tasks.Extensions.xml
+c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.Domain\bin\Debug\System.ValueTuple.xml
+c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.Domain\obj\Debug\SportsStore.Domain.csprojResolveAssemblyReference.cache
+c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.Domain\obj\Debug\SportsStore.Domain.dll
+c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.Domain\obj\Debug\SportsStore.Domain.pdb
