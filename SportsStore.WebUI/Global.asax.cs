@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using SportsStore.WebUI.Infrastructure;
 
 namespace SportsStore.WebUI
 {
@@ -13,6 +14,8 @@ namespace SportsStore.WebUI
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+            ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory());
         }
     }
 }

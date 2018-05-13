@@ -13,6 +13,6 @@ c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportStore.T
 c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportStore.Tests\bin\Debug\System.Threading.Tasks.Extensions.xml
 c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportStore.Tests\bin\Debug\System.ValueTuple.xml
 c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportStore.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
-c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportStore.Tests\obj\Debug\SportStore.Tests.csprojResolveAssemblyReference.cache
 c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportStore.Tests\obj\Debug\SportStore.Tests.dll
 c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportStore.Tests\obj\Debug\SportStore.Tests.pdb
+C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportStore.Tests\obj\Debug\SportStore.Tests.csprojResolveAssemblyReference.cache
