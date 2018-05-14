@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using SportsStore.WebUI.Infrastructure;
+using System.Data.Entity;
+using SportsStore.Domain.Concrete;
 
 namespace SportsStore.WebUI
 {
@@ -14,6 +16,7 @@ namespace SportsStore.WebUI
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            Database.SetInitializer<EFDbContext>(null);
 
             ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory());
         }

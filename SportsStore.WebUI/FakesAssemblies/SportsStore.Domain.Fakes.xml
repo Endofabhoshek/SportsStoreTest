@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SportsStore.Domain.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:SportsStore.Domain.Abstract.Fakes.StubIProductRepository">
+            <summary>Stub type of SportsStore.Domain.Abstract.IProductRepository</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Abstract.Fakes.StubIProductRepository.#ctor">
+            <summary>Initializes a new instance of type StubIProductRepository</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Abstract.Fakes.StubIProductRepository.SportsStore#Domain#Abstract#IProductRepository#Products">
+            <summary>Sets the stub of IProductRepository.get_Products()</summary>
+        </member>
+        <member name="F:SportsStore.Domain.Abstract.Fakes.StubIProductRepository.ProductsGet">
+            <summary>Sets the stub of IProductRepository.get_Products()</summary>
+        </member>
+        <member name="T:SportsStore.Domain.Concrete.Fakes.ShimEFDbContext">
+            <summary>Shim type of SportsStore.Domain.Concrete.EFDbContext</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.ShimEFDbContext.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.ShimEFDbContext.#ctor(SportsStore.Domain.Concrete.EFDbContext)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:SportsStore.Domain.Concrete.Fakes.ShimEFDbContext.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Concrete.Fakes.ShimEFDbContext.AllInstances.ProductsGet">
+            <summary>Sets the shim of EFDbContext.get_Products()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Concrete.Fakes.ShimEFDbContext.AllInstances.ProductsSetDbSetOfProduct">
+            <summary>Sets the shim of EFDbContext.set_Products(DbSet`1&lt;Product&gt; value)</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.ShimEFDbContext.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.ShimEFDbContext.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Concrete.Fakes.ShimEFDbContext.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.ShimEFDbContext.Bind(System.Data.Entity.Infrastructure.IObjectContextAdapter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.ShimEFDbContext.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Concrete.Fakes.ShimEFDbContext.Constructor">
+            <summary>Sets the shim of EFDbContext.EFDbContext()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Concrete.Fakes.ShimEFDbContext.ProductsGet">
+            <summary>Sets the shim of EFDbContext.get_Products()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Concrete.Fakes.ShimEFDbContext.ProductsSetDbSetOfProduct">
+            <summary>Sets the shim of EFDbContext.set_Products(DbSet`1&lt;Product&gt; value)</summary>
+        </member>
+        <member name="T:SportsStore.Domain.Concrete.Fakes.ShimEFProductRepository">
+            <summary>Shim type of SportsStore.Domain.Concrete.EFProductRepository</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.ShimEFProductRepository.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.ShimEFProductRepository.#ctor(SportsStore.Domain.Concrete.EFProductRepository)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:SportsStore.Domain.Concrete.Fakes.ShimEFProductRepository.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Concrete.Fakes.ShimEFProductRepository.AllInstances.ProductsGet">
+            <summary>Sets the shim of EFProductRepository.get_Products()</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.ShimEFProductRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.ShimEFProductRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Concrete.Fakes.ShimEFProductRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.ShimEFProductRepository.Bind(SportsStore.Domain.Abstract.IProductRepository)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Concrete.Fakes.ShimEFProductRepository.Constructor">
+            <summary>Sets the shim of EFProductRepository.EFProductRepository()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Concrete.Fakes.ShimEFProductRepository.ProductsGet">
+            <summary>Sets the shim of EFProductRepository.get_Products()</summary>
+        </member>
+        <member name="T:SportsStore.Domain.Concrete.Fakes.StubEFDbContext">
+            <summary>Stub type of SportsStore.Domain.Concrete.EFDbContext</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.Dispose(System.Boolean)">
+            <summary>Sets the stub of DbContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.DisposeBoolean">
+            <summary>Sets the stub of DbContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.Equals(System.Object)">
+            <summary>Sets the stub of DbContext.Equals(Object obj)</summary>
+        </member>
+        <member name="F:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.EqualsObject">
+            <summary>Sets the stub of DbContext.Equals(Object obj)</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.GetHashCode">
+            <summary>Sets the stub of DbContext.GetHashCode()</summary>
+        </member>
+        <member name="F:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.GetHashCode01">
+            <summary>Sets the stub of DbContext.GetHashCode()</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.InitializeStub">
+            <summary>Initializes a new instance of type StubEFDbContext</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.OnModelCreating(System.Data.Entity.DbModelBuilder)">
+            <summary>Sets the stub of DbContext.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="F:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.OnModelCreatingDbModelBuilder">
+            <summary>Sets the stub of DbContext.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.SaveChanges">
+            <summary>Sets the stub of DbContext.SaveChanges()</summary>
+        </member>
+        <member name="F:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.SaveChanges01">
+            <summary>Sets the stub of DbContext.SaveChanges()</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.SaveChangesAsync">
+            <summary>Sets the stub of DbContext.SaveChangesAsync()</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.SaveChangesAsync(System.Threading.CancellationToken)">
+            <summary>Sets the stub of DbContext.SaveChangesAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.SaveChangesAsync01">
+            <summary>Sets the stub of DbContext.SaveChangesAsync()</summary>
+        </member>
+        <member name="F:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.SaveChangesAsyncCancellationToken">
+            <summary>Sets the stub of DbContext.SaveChangesAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.Set(System.Type)">
+            <summary>Sets the stub of DbContext.Set(Type entityType)</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.Set``1">
+            <summary>Sets the stub of DbContext.Set()</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.SetOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Data.Entity.DbSet{``0}})">
+            <summary>Sets stubs of Set()</summary>
+        </member>
+        <member name="F:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.SetType">
+            <summary>Sets the stub of DbContext.Set(Type entityType)</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.ShouldValidateEntity(System.Data.Entity.Infrastructure.DbEntityEntry)">
+            <summary>Sets the stub of DbContext.ShouldValidateEntity(DbEntityEntry entityEntry)</summary>
+        </member>
+        <member name="F:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.ShouldValidateEntityDbEntityEntry">
+            <summary>Sets the stub of DbContext.ShouldValidateEntity(DbEntityEntry entityEntry)</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.ToString">
+            <summary>Sets the stub of DbContext.ToString()</summary>
+        </member>
+        <member name="F:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.ToString01">
+            <summary>Sets the stub of DbContext.ToString()</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.ValidateEntity(System.Data.Entity.Infrastructure.DbEntityEntry,System.Collections.Generic.IDictionary{System.Object,System.Object})">
+            <summary>Sets the stub of DbContext.ValidateEntity(DbEntityEntry entityEntry, IDictionary`2&lt;Object,Object&gt; items)</summary>
+        </member>
+        <member name="F:SportsStore.Domain.Concrete.Fakes.StubEFDbContext.ValidateEntityDbEntityEntryIDictionaryOfObjectObject">
+            <summary>Sets the stub of DbContext.ValidateEntity(DbEntityEntry entityEntry, IDictionary`2&lt;Object,Object&gt; items)</summary>
+        </member>
+        <member name="T:SportsStore.Domain.Concrete.Fakes.StubEFProductRepository">
+            <summary>Stub type of SportsStore.Domain.Concrete.EFProductRepository</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.StubEFProductRepository.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Concrete.Fakes.StubEFProductRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Concrete.Fakes.StubEFProductRepository.InitializeStub">
+            <summary>Initializes a new instance of type StubEFProductRepository</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Concrete.Fakes.StubEFProductRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Concrete.Fakes.StubEFProductRepository.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:SportsStore.Domain.Entities.Fakes.ShimProduct">
+            <summary>Shim type of SportsStore.Domain.Entities.Product</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Entities.Fakes.ShimProduct.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Entities.Fakes.ShimProduct.#ctor(SportsStore.Domain.Entities.Product)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:SportsStore.Domain.Entities.Fakes.ShimProduct.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.AllInstances.CategoryGet">
+            <summary>Sets the shim of Product.get_Category()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.AllInstances.CategorySetString">
+            <summary>Sets the shim of Product.set_Category(String value)</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.AllInstances.DescriptionGet">
+            <summary>Sets the shim of Product.get_Description()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.AllInstances.DescriptionSetString">
+            <summary>Sets the shim of Product.set_Description(String value)</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.AllInstances.NameGet">
+            <summary>Sets the shim of Product.get_Name()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.AllInstances.NameSetString">
+            <summary>Sets the shim of Product.set_Name(String value)</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.AllInstances.PriceGet">
+            <summary>Sets the shim of Product.get_Price()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.AllInstances.PriceSetDecimal">
+            <summary>Sets the shim of Product.set_Price(Decimal value)</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.AllInstances.ProductIdGet">
+            <summary>Sets the shim of Product.get_ProductId()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.AllInstances.ProductIdSetInt32">
+            <summary>Sets the shim of Product.set_ProductId(Int32 value)</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Entities.Fakes.ShimProduct.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Entities.Fakes.ShimProduct.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.CategoryGet">
+            <summary>Sets the shim of Product.get_Category()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.CategorySetString">
+            <summary>Sets the shim of Product.set_Category(String value)</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.Constructor">
+            <summary>Sets the shim of Product.Product()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.DescriptionGet">
+            <summary>Sets the shim of Product.get_Description()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.DescriptionSetString">
+            <summary>Sets the shim of Product.set_Description(String value)</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.NameGet">
+            <summary>Sets the shim of Product.get_Name()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.NameSetString">
+            <summary>Sets the shim of Product.set_Name(String value)</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.PriceGet">
+            <summary>Sets the shim of Product.get_Price()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.PriceSetDecimal">
+            <summary>Sets the shim of Product.set_Price(Decimal value)</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.ProductIdGet">
+            <summary>Sets the shim of Product.get_ProductId()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.ProductIdSetInt32">
+            <summary>Sets the shim of Product.set_ProductId(Int32 value)</summary>
+        </member>
+        <member name="T:SportsStore.Domain.Entities.Fakes.StubProduct">
+            <summary>Stub type of SportsStore.Domain.Entities.Product</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Entities.Fakes.StubProduct.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.StubProduct.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Entities.Fakes.StubProduct.InitializeStub">
+            <summary>Initializes a new instance of type StubProduct</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.StubProduct.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.StubProduct.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,6 @@
+C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\Testt\bin\Debug\Testt.exe.config
+C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\Testt\bin\Debug\Testt.exe
+C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\Testt\bin\Debug\Testt.pdb
+C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\Testt\obj\Debug\Testt.csprojResolveAssemblyReference.cache
+C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\Testt\obj\Debug\Testt.exe
+C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\Testt\obj\Debug\Testt.pdb

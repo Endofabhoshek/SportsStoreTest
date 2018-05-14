@@ -39,10 +39,8 @@ c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.
 c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\bin\System.Web.Webpages.Razor.xml
 c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\bin\System.Web.Helpers.xml
 c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\bin\System.Web.Mvc.xml
-c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.csprojResolveAssemblyReference.cache
 c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.dll
 c:\users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.pdb
-C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\bin\SportsStore.Domain.Fakes.fakesconfig
 C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\bin\Microsoft.QualityTools.Testing.Fakes.dll
 C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\bin\SportStore.Tests.dll
 C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\bin\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
@@ -99,3 +97,11 @@ C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.
 C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\obj\Debug\Fakes\ssd\o\f.csprojResolveAssemblyReference.cache
 C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\obj\Debug\Fakes\ssd\o\SportsStore.Domain.Fakes.dll
 C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\obj\Debug\Fakes\ssd\o\SportsStore.Domain.Fakes.pdb
+C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\bin\EntityFramework.dll
+C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\bin\EntityFramework.xml
+C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\obj\Debug\Fakes\ssd\b\EntityFramework.dll
+C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\obj\Debug\Fakes\ssd\b\EntityFramework.xml
+C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\obj\Debug\Fakes\ssd\b\EntityFramework.SqlServer.dll
+C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\obj\Debug\Fakes\ssd\b\EntityFramework.SqlServer.xml
