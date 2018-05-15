@@ -7,7 +7,7 @@ using SportsStore.Domain.Concrete;
 using SportsStore.Domain.Entities;
 using SportsStore.WebUI.Controllers;
 using System.Collections.Generic;
-using System.Web.MVC;
+
 
 namespace SportStore.Tests
 {
@@ -37,6 +37,12 @@ namespace SportStore.Tests
 
             //act
             IEnumerable<Product> result = (IEnumerable<Product>)controller.List(2).Model;
+
+            Product[] prodArray = result.ToArray();
+            Assert.IsTrue(prodArray.Length == 2);
+            Assert.AreEqual(prodArray[0].Name, "P4");
+            Assert.AreEqual(prodArray[1].Name, "P5");
+
         }
     }
 }
