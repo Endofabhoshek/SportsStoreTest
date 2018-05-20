@@ -51,7 +51,7 @@ namespace SportStore.Tests
         {
             HtmlHelper helper = null;
 
-            PagingInfo pagingInfo = new PagingInfo() { CurrentItem=2, ItemsPerPage=3, TotalItems=30 };
+            PagingInfo pagingInfo = new PagingInfo() { CurrentItem=2, ItemsPerPage=3, TotalItems= };
 
         }
     }
