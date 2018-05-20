@@ -7,7 +7,8 @@ using SportsStore.Domain.Concrete;
 using SportsStore.Domain.Entities;
 using SportsStore.WebUI.Controllers;
 using System.Collections.Generic;
-
+using System.Web.Mvc;
+using SportsStore.WebUI.Models;
 
 namespace SportStore.Tests
 {
@@ -42,6 +43,15 @@ namespace SportStore.Tests
             Assert.IsTrue(prodArray.Length == 2);
             Assert.AreEqual(prodArray[0].Name, "P4");
             Assert.AreEqual(prodArray[1].Name, "P5");
+
+        }
+
+        [TestMethod]
+        public void CanGeneratePageLinks()
+        {
+            HtmlHelper helper = null;
+
+            PagingInfo pagingInfo = new PagingInfo() { CurrentItem=2, ItemsPerPage=3, TotalItems=30 };
 
         }
     }
