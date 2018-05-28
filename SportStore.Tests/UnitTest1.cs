@@ -76,7 +76,7 @@ namespace SportStore.Tests
             ProductController controller = new ProductController(mock.Object);
             controller.pageSize = 3;
 
-            ProductListViewModel result = (ProductListViewModel)controller.List(2).Model;
+            ProductListViewModel result = (ProductListViewModel)controller.List(null,2).Model;
 
             Product[] prodArray = result.Products.ToArray();
             Assert.IsTrue(prodArray.Length == 2);
