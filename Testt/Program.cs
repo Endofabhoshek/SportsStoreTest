@@ -10,7 +10,16 @@ namespace Testt
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("<<EOL>>");
+            int sum = 0;
+            for (int i = 0; i <= 100; i = i + 2)
+            {
+                if (i % 8 != 0)
+                {
+                    Console.Write(i + "+");
+                    sum = sum + i;
+                }                
+            }
+            Console.Write("=" + sum);
             Console.Read();
         }
     }

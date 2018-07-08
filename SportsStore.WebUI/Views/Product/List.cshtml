@@ -3,17 +3,13 @@
     ViewBag.Title = "Products";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-
-
-
-    <div> 
-        @foreach (var item in Model.Products)
+<div>
+    @foreach (var item in Model.Products)
         {
             Html.RenderPartial("ProductSummary", item);
         }
-    </div>
-    <div class="pager">
-        @Html.PageLinks(Model.pagingInfo, x => Url.Action("List", new {page = x}))
-    </div>
+</div>
+<div class="pager">
+    @Html.PageLinks(Model.pagingInfo, x => Url.Action("List", new {category=Model.CurrentCategory ,page = x}))
+</div>
 

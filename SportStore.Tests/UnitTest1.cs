@@ -38,7 +38,7 @@ namespace SportStore.Tests
             controller.pageSize = 3;
 
             //act
-            IEnumerable<Product> result = (IEnumerable<Product>)controller.List(2).Model;
+            IEnumerable<Product> result = (IEnumerable<Product>)controller.List(null, 2).Model;
 
             Product[] prodArray = result.ToArray();
             Assert.IsTrue(prodArray.Length == 2);
@@ -56,7 +56,7 @@ namespace SportStore.Tests
 
             MvcHtmlString result = helper.PageLinks(pagingInfo, i => "Page" + i);
 
-            Assert.AreEqual(result.ToString(), @"<a href=""Page1"">1</a>"  + @"<a class=""selected"" href=""Page2"">2</a>" + @"<a href=""Page3"">3</a>" );
+            Assert.AreEqual(result.ToString(), @"<a href=""Page1"">1</a>" + @"<a class=""selected"" href=""Page2"">2</a>" + @"<a href=""Page3"">3</a>");
         }
 
         [TestMethod]
@@ -76,12 +76,33 @@ namespace SportStore.Tests
             ProductController controller = new ProductController(mock.Object);
             controller.pageSize = 3;
 
-            ProductListViewModel result = (ProductListViewModel)controller.List(null,2).Model;
+            ProductListViewModel result = (ProductListViewModel)controller.List(null, 2).Model;
 
             Product[] prodArray = result.Products.ToArray();
             Assert.IsTrue(prodArray.Length == 2);
-            Assert.AreEqual(prodArray[0].Name , "Falcon");
-            Assert.AreEqual(prodArray[1].Name , "Rhodey");
+            Assert.AreEqual(prodArray[0].Name, "Falcon");
+            Assert.AreEqual(prodArray[1].Name, "Rhodey");
+        }
+
+        [TestMethod]
+        public void Can_FilterProducts()
+        {
+            Mock<IProductRepository> ProductRepository = new Mock<IProductRepository>();
+            ProductRepository.Setup(m => m.Products).Returns(new Product[] {
+                    new Product {ProductId = 1, Name = "P1", Category = "Cat1"},
+                    new Product {ProductId = 2, Name = "P2", Category = "Cat2"},
+                    new Product {ProductId = 3, Name = "P3", Category = "Cat1"},
+                    new Product {ProductId = 4, Name = "P4", Category = "Cat2"},
+                    new Product {ProductId = 5, Name = "P5", Category = "Cat3"}
+}.AsQueryable());
+
+            ProductController controller = new ProductController(ProductRepository.Object);
+
+            Product[] result = ((ProductListViewModel)controller.List("Cat2", 1).Model).Products.ToArray();
+
+            Assert.AreEqual(result.Length, 2);
+            Assert.IsTrue(result[0].Name == "P2" && result[0].Category == "Cat2");
+            Assert.IsTrue(result[1].Name == "P4" && result[1].Category == "Cat2");
         }
     }
 }

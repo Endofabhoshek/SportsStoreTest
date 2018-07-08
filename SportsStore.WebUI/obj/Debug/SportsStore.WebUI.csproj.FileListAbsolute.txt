@@ -98,3 +98,4 @@ C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.
 C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\obj\Debug\Fakes\ssd\b\EntityFramework.SqlServer.dll
 C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\obj\Debug\Fakes\ssd\b\EntityFramework.SqlServer.xml
 C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\abhi\documents\visual studio 2015\Projects\SportsStoreTest\SportsStore.WebUI\bin\SportsStore.Domain.Fakes.fakesconfig
