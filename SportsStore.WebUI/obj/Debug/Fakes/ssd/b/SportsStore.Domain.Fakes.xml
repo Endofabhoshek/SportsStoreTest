@@ -199,6 +199,108 @@
         <member name="P:SportsStore.Domain.Concrete.Fakes.StubEFProductRepository.InstanceObserver">
             <summary>Gets or sets the instance observer.</summary>
         </member>
+        <member name="T:SportsStore.Domain.Entities.Fakes.ShimCart">
+            <summary>Shim type of SportsStore.Domain.Entities.Cart</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Entities.Fakes.ShimCart.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Entities.Fakes.ShimCart.#ctor(SportsStore.Domain.Entities.Cart)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimCart.AddProductInt32">
+            <summary>Sets the shim of Cart.Add(Product product, Int32 quantity)</summary>
+        </member>
+        <member name="T:SportsStore.Domain.Entities.Fakes.ShimCart.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimCart.AllInstances.AddProductInt32">
+            <summary>Sets the shim of Cart.Add(Product product, Int32 quantity)</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimCart.AllInstances.Clear">
+            <summary>Sets the shim of Cart.Clear()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimCart.AllInstances.ComputeTotalValue">
+            <summary>Sets the shim of Cart.ComputeTotalValue()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimCart.AllInstances.LinesGet">
+            <summary>Sets the shim of Cart.get_Lines()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimCart.AllInstances.RemoveLinesProduct">
+            <summary>Sets the shim of Cart.RemoveLines(Product product)</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Entities.Fakes.ShimCart.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Entities.Fakes.ShimCart.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimCart.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimCart.Clear">
+            <summary>Sets the shim of Cart.Clear()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimCart.ComputeTotalValue">
+            <summary>Sets the shim of Cart.ComputeTotalValue()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimCart.Constructor">
+            <summary>Sets the shim of Cart.Cart()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimCart.LinesGet">
+            <summary>Sets the shim of Cart.get_Lines()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimCart.RemoveLinesProduct">
+            <summary>Sets the shim of Cart.RemoveLines(Product product)</summary>
+        </member>
+        <member name="T:SportsStore.Domain.Entities.Fakes.ShimCartLine">
+            <summary>Shim type of SportsStore.Domain.Entities.CartLine</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Entities.Fakes.ShimCartLine.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Entities.Fakes.ShimCartLine.#ctor(SportsStore.Domain.Entities.CartLine)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:SportsStore.Domain.Entities.Fakes.ShimCartLine.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimCartLine.AllInstances.ProductGet">
+            <summary>Sets the shim of CartLine.get_Product()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimCartLine.AllInstances.ProductSetProduct">
+            <summary>Sets the shim of CartLine.set_Product(Product value)</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimCartLine.AllInstances.QuantityGet">
+            <summary>Sets the shim of CartLine.get_Quantity()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimCartLine.AllInstances.QuantitySetInt32">
+            <summary>Sets the shim of CartLine.set_Quantity(Int32 value)</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Entities.Fakes.ShimCartLine.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Entities.Fakes.ShimCartLine.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimCartLine.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimCartLine.Constructor">
+            <summary>Sets the shim of CartLine.CartLine()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimCartLine.ProductGet">
+            <summary>Sets the shim of CartLine.get_Product()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimCartLine.ProductSetProduct">
+            <summary>Sets the shim of CartLine.set_Product(Product value)</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimCartLine.QuantityGet">
+            <summary>Sets the shim of CartLine.get_Quantity()</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.ShimCartLine.QuantitySetInt32">
+            <summary>Sets the shim of CartLine.set_Quantity(Int32 value)</summary>
+        </member>
         <member name="T:SportsStore.Domain.Entities.Fakes.ShimProduct">
             <summary>Shim type of SportsStore.Domain.Entities.Product</summary>
         </member>
@@ -282,6 +384,42 @@
         </member>
         <member name="P:SportsStore.Domain.Entities.Fakes.ShimProduct.ProductIdSetInt32">
             <summary>Sets the shim of Product.set_ProductId(Int32 value)</summary>
+        </member>
+        <member name="T:SportsStore.Domain.Entities.Fakes.StubCart">
+            <summary>Stub type of SportsStore.Domain.Entities.Cart</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Entities.Fakes.StubCart.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.StubCart.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Entities.Fakes.StubCart.InitializeStub">
+            <summary>Initializes a new instance of type StubCart</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.StubCart.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.StubCart.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:SportsStore.Domain.Entities.Fakes.StubCartLine">
+            <summary>Stub type of SportsStore.Domain.Entities.CartLine</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Entities.Fakes.StubCartLine.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.StubCartLine.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:SportsStore.Domain.Entities.Fakes.StubCartLine.InitializeStub">
+            <summary>Initializes a new instance of type StubCartLine</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.StubCartLine.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SportsStore.Domain.Entities.Fakes.StubCartLine.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
         </member>
         <member name="T:SportsStore.Domain.Entities.Fakes.StubProduct">
             <summary>Stub type of SportsStore.Domain.Entities.Product</summary>

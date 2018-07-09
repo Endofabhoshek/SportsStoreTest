@@ -9,6 +9,7 @@ using SportsStore.WebUI.Controllers;
 using System.Collections.Generic;
 using System.Web.Mvc;
 using SportsStore.WebUI.Models;
+using SportsStore.WebUI.HtmlHelpers;
 
 namespace SportStore.Tests
 {
@@ -37,7 +38,7 @@ namespace SportStore.Tests
             controller.pageSize = 3;
 
             //act
-            IEnumerable<Product> result = (IEnumerable<Product>)controller.List(2).Model;
+            IEnumerable<Product> result = (IEnumerable<Product>)controller.List(null, 2).Model;
 
             Product[] prodArray = result.ToArray();
             Assert.IsTrue(prodArray.Length == 2);
@@ -51,8 +52,57 @@ namespace SportStore.Tests
         {
             HtmlHelper helper = null;
 
-            PagingInfo pagingInfo = new PagingInfo() { CurrentItem=2, ItemsPerPage=3, TotalItems= };
+            PagingInfo pagingInfo = new PagingInfo() { CurrentItem = 2, ItemsPerPage = 3, TotalItems = 10 };
 
+            MvcHtmlString result = helper.PageLinks(pagingInfo, i => "Page" + i);
+
+            Assert.AreEqual(result.ToString(), @"<a href=""Page1"">1</a>" + @"<a class=""selected"" href=""Page2"">2</a>" + @"<a href=""Page3"">3</a>");
+        }
+
+        [TestMethod]
+        public void Can_Send_Pagination_Model()
+        {
+            Mock<IProductRepository> mock = new Mock<IProductRepository>();
+            mock.Setup(m => m.Products).Returns(new Product[] {
+                new Product() { ProductId=1, Category="Iron Man's Team", Description="Can Throw  Web(need help- gadget!)", Name="SpiderMan", Price=1 },
+                new Product() { ProductId=2, Category="Captains's Team", Description="Same Age as Cap!", Name="Winter Soldier", Price=1 },
+                new Product() { ProductId=3, Category="Iron Man's Team", Description="Tony made me!", Name="Rhodey", Price=1 },
+                new Product() { ProductId=4, Category="Captains's Team", Description="Just got the device(stole it).", Name="Ant Man", Price=1 },
+                new Product() { ProductId=5, Category="Iron Man's Team", Description="Am I in right team?", Name="Natasha", Price=1 },
+                new Product() { ProductId=6, Category="Captains's Team", Description="Am I an Avenger?", Name="Falcon", Price=1 },
+                new Product() { ProductId=7, Category="Am I in this Movie", Description="Stop this shit, my hammer broke!", Name="Thor", Price=1 }
+            }.AsQueryable());
+
+            ProductController controller = new ProductController(mock.Object);
+            controller.pageSize = 3;
+
+            ProductListViewModel result = (ProductListViewModel)controller.List(null, 2).Model;
+
+            Product[] prodArray = result.Products.ToArray();
+            Assert.IsTrue(prodArray.Length == 2);
+            Assert.AreEqual(prodArray[0].Name, "Falcon");
+            Assert.AreEqual(prodArray[1].Name, "Rhodey");
+        }
+
+        [TestMethod]
+        public void Can_FilterProducts()
+        {
+            Mock<IProductRepository> ProductRepository = new Mock<IProductRepository>();
+            ProductRepository.Setup(m => m.Products).Returns(new Product[] {
+                    new Product {ProductId = 1, Name = "P1", Category = "Cat1"},
+                    new Product {ProductId = 2, Name = "P2", Category = "Cat2"},
+                    new Product {ProductId = 3, Name = "P3", Category = "Cat1"},
+                    new Product {ProductId = 4, Name = "P4", Category = "Cat2"},
+                    new Product {ProductId = 5, Name = "P5", Category = "Cat3"}
+}.AsQueryable());
+
+            ProductController controller = new ProductController(ProductRepository.Object);
+
+            Product[] result = ((ProductListViewModel)controller.List("Cat2", 1).Model).Products.ToArray();
+
+            Assert.AreEqual(result.Length, 2);
+            Assert.IsTrue(result[0].Name == "P2" && result[0].Category == "Cat2");
+            Assert.IsTrue(result[1].Name == "P4" && result[1].Category == "Cat2");
         }
     }
 }
