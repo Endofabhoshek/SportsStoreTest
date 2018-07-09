@@ -18,44 +18,52 @@ namespace SportsStore.WebUI.Controllers
             productRepository = repo;
         }
 
-        public RedirectToRouteResult AddToCart(int productId, string returnUrl)
+        public RedirectToRouteResult AddToCart(Cart cart,int productId, string returnUrl)
         {
             Product product = productRepository.Products
             .FirstOrDefault(p => p.ProductId == productId);
             if (product != null)
             {
-                GetCart().Add(product, 1);
+                cart.Add(product, 1);
             }
             return RedirectToAction("Index", new { returnUrl });
 
         }
-        private Cart GetCart()
-        {
-            Cart cart = (Cart)Session["Cart"];
-            if (cart == null)
-            {
-                cart = new Cart();
-                Session["Cart"] = cart;
-            }
-            return cart;
-        }
+        //private Cart GetCart()
+        //{
+        //    Cart cart = (Cart)Session["Cart"];
+        //    if (cart == null)
+        //    {
+        //        cart = new Cart();
+        //        Session["Cart"] = cart;
+        //    }
+        //    return cart;
+        //}
 
-        public RedirectToRouteResult RemoveFromCart(int productId, string returnUrl)
+        public RedirectToRouteResult RemoveFromCart(Cart cart,int productId, string returnUrl)
         {
             Product product = productRepository.Products
             .FirstOrDefault(p => p.ProductId == productId);
             if (product != null)
             {
-                GetCart().RemoveLines(product);
+                cart.RemoveLines(product);
             }
             return RedirectToAction("Index", new { returnUrl });
         }
 
-
-
-        public ViewResult Index(string returnUrl)
+        public ViewResult Index(Cart cart,string returnUrl)
         {
-            return View(new CartIndexViewModel() { Cart = GetCart(), ReturnUrl = returnUrl });
+            return View(new CartIndexViewModel() { Cart = cart, ReturnUrl = returnUrl });
+        }
+
+        public PartialViewResult Summary (Cart cart)
+        {
+            return PartialView(cart);
+        }
+
+        public ViewResult CheckOut()
+        {
+            return View(new ShippingDetails());
         }
     }
 }
